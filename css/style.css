@@ -1,25 +1,156 @@
-/* reset & base */
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:sans-serif; line-height:1.6; padding:1rem; }
-
-/* nav */
-nav {
-  display:flex; justify-content:space-between; align-items:center;
-  margin-bottom:2rem;
-}
-nav .logo { font-weight:bold; text-decoration:none; font-size:1.2rem; }
-nav ul { list-style:none; display:flex; gap:1rem; }
-nav a { text-decoration:none; color:#333; }
-nav a:hover { text-decoration:underline; }
-
-/* main */
-main { max-width:720px; margin:auto; }
-main h1 { margin-bottom:0.5rem; }
-main p { margin-bottom:1rem; }
-
-/* button */
-button {
-  padding:0.5rem 1rem; border:none; background:#0077cc;
-  color:white; cursor:pointer; border-radius:4px;
-}
-button:hover { background:#005fa3; }
+/* -----------------------------------------------------------------------------
+   Reset & Base
+   ----------------------------------------------------------------------------- */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+    color: #333;
+    background: #fdfdfd;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Navigation
+     ----------------------------------------------------------------------------- */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+  
+  nav .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: #005fa3;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Headings & Sections
+     ----------------------------------------------------------------------------- */
+  h1 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.25rem;
+  }
+  
+  main section {
+    margin-bottom: 2rem;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Intro / Featured / Contact (on index.html)
+     ----------------------------------------------------------------------------- */
+  .intro h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro p {
+    max-width: 720px;
+    font-size: 1.1rem;
+  }
+  
+  .featured ul,
+  .contact ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .featured li,
+  .contact li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Project Detail Sections
+     ----------------------------------------------------------------------------- */
+  section[id] p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  section[id] ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+  }
+  
+  section[id] ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Miscellaneous Page
+     ----------------------------------------------------------------------------- */
+  a.download {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a.download:hover {
+    text-decoration: underline;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Button
+     ----------------------------------------------------------------------------- */
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #0077cc;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
+  /* -----------------------------------------------------------------------------
+     Responsive Nav
+     ----------------------------------------------------------------------------- */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+  
