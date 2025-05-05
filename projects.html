@@ -2,25 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Projects</title>
+  <title>Projects – Xingwei Li</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav>
-    <a href="index.html" class="logo">Anthony Li</a>
+    <a href="index.html" class="logo">Xingwei Li</a>
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
       <li><a href="misc.html">Misc</a></li>
     </ul>
   </nav>
 
   <main>
     <h1>Projects</h1>
-    <ul>
-      <li><a href="https://github.com/…">Project 1</a> – brief description</li>
-      <li><a href="https://github.com/…">Project 2</a> – brief description</li>
-    </ul>
+
+    <section id="toyota">
+      <h2>Automating Toyota Inventory Management</h2>
+      <p><strong>Python • Random Forest • Power BI</strong></p>
+      <ul>
+        <li>Built a random‑forest model to categorize part orders, targeting a 20 % reduction in inventory cycle time.</li>
+        <li>Generated lot‑size recommendations and delivered a user‑friendly prototype with full documentation.</li>
+      </ul>
+    </section>
+
+    <section id="heatmap">
+      <h2>Urban Heat‑Island Analysis for New York City</h2>
+      <p><strong>Python • XGBoost • Hybrid Neural Network</strong></p>
+      <ul>
+        <li>Fused satellite temperature, street‑tree & building‑energy data via spatial joins.</li>
+        <li>Identified building energy as the key driver of surface temperatures (R² = 0.45; MSE = 14.1).</li>
+      </ul>
+    </section>
+
+    <section id="admission">
+      <h2>Analysis of NYC School Admission Data</h2>
+      <p><strong>Python • PCA • Regression</strong></p>
+      <ul>
+        <li>Processed 50K+ records; reduced dimensionality with PCA; multivariate regression (R² = 0.64).</li>
+        <li>Recommended need‑based counseling strategies adopted by NYU Partnership schools.</li>
+      </ul>
+    </section>
+
+    <section id="secondhand">
+      <h2>Secondhand Goods Trading Platform</h2>
+      <p><strong>React.js • Express.js • MongoDB • JWT • GitHub Actions</strong></p>
+      <ul>
+        <li>Designed & developed full‑stack UX for student marketplace with JWT authentication.</li>
+        <li>Automated CI/CD and deployed a scalable web app on GitHub Pages & Heroku.</li>
+      </ul>
+    </section>
+
+    <p>
+      ➜ See the full <a href="misc.html#portfolio">Project Portfolio (PDF)</a> for details on methodology,
+      data sources, and results.
+    </p>
   </main>
 
   <script src="js/main.js"></script>
